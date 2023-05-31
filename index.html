@@ -29,11 +29,11 @@
   <!--영화 검색란-->
   <form class="search">
     <label>영화 검색:</label>
-    <input placeholder="영화 제목을 입력하세요.">
-    <button type="button" class="btn btn-dark">검색</button>
+    <input type="text" id="searchInput" placeholder="영화 제목을 입력하세요.">
+    <button type="button" id="searchBtn" class="btn btn-dark" onclick="Search(event)">검색</button>
   </form>
-  <!--영화 카드 UI-->
-  <section class="cardlist">
+  <!--영화 카드 UI, 자바스크립트에서 데이터 추가-->
+  <section class="cardlist" id="movieList">
 
   </section>
 
@@ -58,7 +58,6 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <script src="./main.js"></script>
-  <script src="./title.js"></script>
 </body>
 
 </html>

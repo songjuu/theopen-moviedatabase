@@ -48,13 +48,21 @@
 }
 
 .cardlist {
-  display: grid;
+  display: grid; /*grid => justify-self*/
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  padding-bottom: 20px;
 }
 
-.img-link {
+.movie-card {
+  justify-self: center; /*행 축을 따라 그리드 아이템 내부 콘텐츠 정렬*/
+  margin: 20px;
+  padding: 20px;
   cursor: pointer;
+  box-shadow: 3px 3px 3px 3px #555555;
+}
+.movie-card h3 {
+  font-weight: bolder;
 }
 
 .footer {
@@ -71,3 +79,16 @@
 /* .footer img {
   width: 30px;
 } */
+
+#go-top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 9999;
+  color: #3f51b5; /* 색상변경*/
+}
