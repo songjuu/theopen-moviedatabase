@@ -80,15 +80,14 @@
   width: 30px;
 } */
 
-#go-top {
-  display: none;
+.goupbtn {
+  top: 90%;
+  left: 96%;
+  width: 50px;
+  height: 50px;
+  border-radius: 80%;
+  background-color: #ffc107;
+  border: #ffc107 3px solid;
   position: fixed;
-  right: 30px;
-  bottom: 50px;
-  outline: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  z-index: 9999;
-  color: #3f51b5; /* 색상변경*/
+  z-index: 2;
 }

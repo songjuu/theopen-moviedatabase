@@ -34,7 +34,6 @@ function fetchMovie(page) {
       const movies = res.results;
       // console.log(movies);
 
-      //map() 리턴 값 존재, forEach() 리턴 값 존재 x
       movies.map(function (movie) {
         // console.log(movie.id);
         const div = document.createElement("div");
@@ -53,7 +52,7 @@ function fetchMovie(page) {
                             </div>
                           </div>`;
 
-        //div에 output으로 변경
+        //div에 output 넣기
         div.innerHTML = output;
         //append()와 다르게 오직 node 객체만 받을 수 있음
         //appendhild()오직 하나의 노드만 추가, DOMstring 넣을 경우 에러 발생
@@ -66,10 +65,20 @@ function fetchMovie(page) {
     .catch((erro) => console.log(erro));
 }
 
-//alert 창에 id 값 띄움
+//alert 창에 id 값 띄움.
 function openView(id) {
   // console.log(id);
   alert(`영화 ID: ${id}`);
+}
+
+//검색 초기화 기능
+function reload() {
+  window.location.reload();
+}
+
+//페이지 최상단 가기
+function clickme() {
+  window.scrollTo(0, 0);
 }
 
 //윈도우 로드시 기본으로 한번 함수 실행
