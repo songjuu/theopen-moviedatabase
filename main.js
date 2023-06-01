@@ -71,6 +71,16 @@ function openView(id) {
   alert(`영화 ID: ${id}`);
 }
 
+//검색 엔터키 반응
+let input = document.getElementById("searchInput");
+input.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    // alert("눌렸습니다.")
+    e.preventDefault();
+    document.getElementById("searchBtn").click();
+  }
+});
+
 //검색 초기화 기능
 function reload() {
   window.location.reload();
